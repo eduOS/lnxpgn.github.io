@@ -5,7 +5,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://lnxpgn.github.io//"/>
-  <updated>2015-08-01T08:20:06.000Z</updated>
+  <updated>2015-08-01T08:24:53.000Z</updated>
   <id>http://lnxpgn.github.io//</id>
   
   <author>
@@ -20,17 +20,17 @@
     <link href="http://lnxpgn.github.io/2015/08/01/hexo-markdown-issues/"/>
     <id>http://lnxpgn.github.io/2015/08/01/hexo-markdown-issues/</id>
     <published>2015-08-01T08:19:03.000Z</published>
-    <updated>2015-08-01T08:20:06.000Z</updated>
-    <content type="html"><![CDATA[<p>##Backslash escapes
-Hexo installs a plugin <em>hexo-renderer-marked</em> as the default Markdown renderer, but the plugin generates literal characters which are not what you want if have a backslash before these characters, such as <em>&quot;scrapy crawl \&lt;spider name\&gt;&quot;</em> becomes <em>&quot;scrapy crawl \&quot;</em>. To fix this issue by replacing <em>hexo-renderer-marked</em> with <em>hexo-renderer-markdown-it</em>.</p>
-<p>##&quot;Read More&quot; link
-Normally, we insert <em>&quot;&lt;!-- more --&gt;&quot;</em> into a post to display its summary, but don&apos;t work if using <em>hexo-renderer-markdown-it</em> with default configuration, <em>hexo-renderer-markdown-it</em> escapes HTML. To fix this issue by appending</p>
+    <updated>2015-08-01T08:24:53.000Z</updated>
+    <content type="html"><![CDATA[<h2 id="backslash-escapes">Backslash escapes</h2>
+<p>Hexo installs a plugin <em>hexo-renderer-marked</em> as the default Markdown renderer, but the plugin generates literal characters which are not what you want if have a backslash before these characters, such as <em>&quot;scrapy crawl \&lt;spider name\&gt;&quot;</em> becomes <em>&quot;scrapy crawl \&quot;</em>. To fix this issue by replacing <em>hexo-renderer-marked</em> with <em>hexo-renderer-markdown-it</em>.</p>
+<h2 id="read-more-link">&quot;Read More&quot; link</h2>
+<p>Normally, we insert <em>&quot;&lt;!-- more --&gt;&quot;</em> into a post to display its summary, but don&apos;t work if using <em>hexo-renderer-markdown-it</em> with default configuration, <em>hexo-renderer-markdown-it</em> escapes HTML. To fix this issue by appending</p>
 <figure class="highlight less"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">markdown</span>:</span><br><span class="line">  <span class="attribute">render</span>:</span><br><span class="line">    <span class="attribute">html</span>: true</span><br></pre></td></tr></table></figure>
 <p>to <em>Hexo</em>&apos;s <em>_config.yml</em>.</p>
 ]]></content>
     <summary type="html">
-    <![CDATA[<p>##Backslash escapes
-Hexo installs a plugin <em>hexo-renderer-marked</em> as the default Markdown renderer, but the plugin generates liter]]>
+    <![CDATA[<h2 id="backslash-escapes">Backslash escapes</h2>
+<p>Hexo installs a plugin <em>hexo-renderer-marked</em> as the default Markdown renderer, ]]>
     </summary>
     
       <category term="Hexo" scheme="http://lnxpgn.github.io/tags/Hexo/"/>
