@@ -22,7 +22,7 @@
 
 
 
-  <meta name="keywords" content="Hexo,next" />
+  <meta name="keywords" content="Hexo,Markdown," />
 
 
 
@@ -47,7 +47,7 @@
 
 
 
-  <title> 竹里馆 </title>
+  <title> Hexo + Markdown issues // 竹里馆 </title>
 </head>
 
 <body>
@@ -61,9 +61,7 @@
   </div>
 <![endif]-->
 
-  <div class="container one-column 
-   page-home 
-">
+  <div class="container one-column page-post-detail">
     <div class="headband"></div>
 
     <div id="header" class="header">
@@ -139,9 +137,9 @@
       <div class="main-inner">
         <div id="content" class="content">
           
+
   <div id="posts" class="posts-expand">
     
-      
 
   <div class="post post-type-normal ">
     <div class="post-header">
@@ -152,9 +150,7 @@
           
           
             
-              <a class="post-title-link" href="/2015/08/01/hexo-markdown-issues/">
-                Hexo + Markdown issues
-              </a>
+              Hexo + Markdown issues
             
           
         </h1>
@@ -179,105 +175,57 @@
       
 
       
-        
-          <p>##Backslash escapes
+        <p>##Backslash escapes
 Hexo installs a plugin <em>hexo-renderer-marked</em> as the default Markdown renderer, but the plugin generates literal characters which are not what you want if have a backslash before these characters, such as <em>&quot;scrapy crawl \&lt;spider name\&gt;&quot;</em> becomes <em>&quot;scrapy crawl \&quot;</em>. To fix this issue by replacing <em>hexo-renderer-marked</em> with <em>hexo-renderer-markdown-it</em>.</p>
 <p>##&quot;Read More&quot; link
 Normally, we insert <em>&quot;&lt;!-- more --&gt;&quot;</em> into a post to display its summary, but don&apos;t work if using <em>hexo-renderer-markdown-it</em> with default configuration, <em>hexo-renderer-markdown-it</em> escapes HTML. To fix this issue by appending</p>
 <figure class="highlight less"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">markdown</span>:</span><br><span class="line">  <span class="attribute">render</span>:</span><br><span class="line">    <span class="attribute">html</span>: true</span><br></pre></td></tr></table></figure>
 <p>to <em>Hexo</em>&apos;s <em>_config.yml</em>.</p>
 
-        
       
     </div>
 
     <div class="post-footer">
       
-
+        <div class="post-tags">
+          
+            <a href="/tags/Hexo/"> #Hexo </a>
+          
+            <a href="/tags/Markdown/"> #Markdown </a>
+          
+        </div>
       
 
       
+        <div class="post-nav">
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2015/07/27/using-multiple-spiders-in-a-scrapy-project/">Using multiple spiders in a Scrapy project</a>
+            
+          </div>
+        </div>
       
-        <div class="post-eof"></div>
+
+      
       
     </div>
   </div>
 
 
+
     
-      
 
-  <div class="post post-type-normal ">
-    <div class="post-header">
-
-      
-      
-        <h1 class="post-title">
-          
-          
-            
-              <a class="post-title-link" href="/2015/07/27/using-multiple-spiders-in-a-scrapy-project/">
-                Using multiple spiders in a Scrapy project
-              </a>
-            
-          
-        </h1>
-      
-
-      <div class="post-meta">
-        <span class="post-time">
-          Posted on 2015-07-27
-        </span>
-
-        
-
-        
-          
+    
+      <div class="comments" id="comments">
         
       </div>
-    </div>
-
-    <div class="post-body">
-
-      
-      
-
-      
-        
-          <h2>Overview</h2>
-<p>Different channel's structure in a websit are similar, sometimes we want to reuse source code and don't create a <a href="http://scrapy.org/">Scrap</a> project per channel. This is a tutorial how to use multiple spiders in a Scrapy project.</p>
-<h2>ENV</h2>
-<p>Python: 2.7.5<br>
-Scrapy: 0.24.2</p>
-<h2>Tree-like directories of this tutorial project</h2>
-<p>Source code in GitHub: <a href="https://github.com/lnxpgn/scrapy_multiple_spiders">scrapy_multiple_spiders</a></p>
-<figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">scrapy_multiple_spiders</span><br><span class="line">├── commands</span><br><span class="line">│   ├── __init__<span class="class">.py</span></span><br><span class="line">│   └── crawl<span class="class">.py</span></span><br><span class="line">└── tutorial</span><br><span class="line">    ├── scrapy<span class="class">.cfg</span></span><br><span class="line">    └── tutorial</span><br><span class="line">        ├── __init__<span class="class">.py</span></span><br><span class="line">        ├── common_spider<span class="class">.py</span></span><br><span class="line">        ├── items<span class="class">.py</span></span><br><span class="line">        ├── pipelines<span class="class">.py</span></span><br><span class="line">        ├── settings<span class="class">.py</span></span><br><span class="line">        ├── spider_settings</span><br><span class="line">        │   ├── __init__<span class="class">.py</span></span><br><span class="line">        │   ├── spider1<span class="class">.py</span></span><br><span class="line">        │   └── spider2<span class="class">.py</span></span><br><span class="line">        └── spiders</span><br><span class="line">            ├── __init__<span class="class">.py</span></span><br><span class="line">            ├── spider1<span class="class">.py</span></span><br><span class="line">            └── spider2.py</span><br></pre></td></tr></table></figure>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2015/07/27/using-multiple-spiders-in-a-scrapy-project/">
-              Read more &raquo;
-            </a>
-          </div>
-        
-      
-    </div>
-
-    <div class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </div>
-  </div>
-
-
     
   </div>
 
-  
 
         </div>
 
@@ -298,6 +246,15 @@ Scrapy: 0.24.2</p>
   <div id="sidebar" class="sidebar">
     <div class="sidebar-inner">
 
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table Of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            Overview
+          </li>
+        </ul>
       
 
       <div class="site-overview">
@@ -348,6 +305,17 @@ Scrapy: 0.24.2</p>
 
       </div>
 
+      
+        <div class="post-toc-wrap sidebar-panel-active">
+          <div class="post-toc-indicator-top post-toc-indicator"></div>
+          <div class="post-toc">
+            
+            
+              <p class="post-toc-empty">This post does not have a Table Of Contents</p>
+            
+          </div>
+          <div class="post-toc-indicator-bottom post-toc-indicator"></div>
+        </div>
       
 
     </div>
@@ -410,6 +378,145 @@ Scrapy: 0.24.2</p>
   <script type="text/javascript" src="/js/search-toggle.js"></script>
 
   
+  
+<script type="text/javascript" src="/js/bootstrap.scrollspy.js?v=0.4.3" id="bootstrap.scrollspy.custom"></script>
+
+
+<script type="text/javascript" id="sidebar.toc.highlight">
+  $(document).ready(function () {
+    var tocSelector = '.post-toc';
+    var $tocSelector = $(tocSelector);
+    var activeCurrentSelector = '.active-current';
+
+    $tocSelector
+      .on('activate.bs.scrollspy', function () {
+        var $currentActiveElement = $(tocSelector + ' .active').last();
+
+        removeCurrentActiveClass();
+        $currentActiveElement.addClass('active-current');
+
+        $tocSelector[0].scrollTop = $currentActiveElement.position().top;
+      })
+      .on('clear.bs.scrollspy', function () {
+        removeCurrentActiveClass();
+      });
+
+    function removeCurrentActiveClass () {
+      $(tocSelector + ' ' + activeCurrentSelector)
+        .removeClass(activeCurrentSelector.substring(1));
+    }
+
+    function processTOC () {
+      getTOCMaxHeight();
+      toggleTOCOverflowIndicators();
+    }
+
+    function getTOCMaxHeight () {
+      var $sidebarInner = $('.sidebar-inner');
+      var height = $('.sidebar').height() -
+                   $tocSelector.position().top -
+                   $('.post-toc-indicator-bottom').height();
+
+      $tocSelector.css('height', height);
+
+      return height;
+    }
+
+    function toggleTOCOverflowIndicators () {
+      tocOverflowIndicator(
+        '.post-toc-indicator-top',
+        $tocSelector.scrollTop() > 0 ? 'show' : 'hide'
+      );
+
+      tocOverflowIndicator(
+        '.post-toc-indicator-bottom',
+        $tocSelector.scrollTop() >= $tocSelector.find('ol').height() - $tocSelector.height() ? 'hide' : 'show'
+      )
+    }
+
+    $(document).on('sidebar.didShow', function () {
+      processTOC();
+    });
+
+    $('body').scrollspy({ target: tocSelector });
+    $(window).on('resize', function () {
+      if ( $('.sidebar').hasClass('sidebar-active') ) {
+        processTOC();
+      }
+    });
+
+    onScroll($tocSelector);
+
+    function onScroll (element) {
+      element.on('mousewheel DOMMouseScroll', function (event) {
+          var oe = event.originalEvent;
+          var delta = oe.wheelDelta || -oe.detail;
+          var self = this;
+
+          this.scrollTop += ( delta < 0 ? 1 : -1 ) * 30;
+          event.preventDefault();
+
+          toggleTOCOverflowIndicators();
+      });
+    }
+
+    function tocOverflowIndicator (indicator, action) {
+      $(indicator).velocity('stop').velocity({
+        opacity: action === 'show' ? 0.4 : 0
+      }, { duration: 100 });
+    }
+
+  });
+</script>
+
+
+  <script type="text/javascript" id="sidebar.nav">
+    $(document).ready(function () {
+      var html = $('html');
+
+      $('.sidebar-nav li').on('click', function () {
+        var item = $(this);
+        var activeTabClassName = 'sidebar-nav-active';
+        var activePanelClassName = 'sidebar-panel-active';
+        if (item.hasClass(activeTabClassName)) {
+          return;
+        }
+
+        var currentTarget = $('.' + activePanelClassName);
+        var target = $('.' + item.data('target'));
+
+        currentTarget.velocity('transition.slideUpOut', 200, function () {
+          target
+            .velocity('stop')
+            .velocity('transition.slideDownIn', 200)
+            .addClass(activePanelClassName);
+        });
+
+        item.siblings().removeClass(activeTabClassName);
+        item.addClass(activeTabClassName);
+      });
+
+      $('.post-toc a').on('click', function (e) {
+        e.preventDefault();
+        var offset = $(escapeSelector(this.getAttribute('href'))).offset().top;
+        html.velocity('stop').velocity('scroll', {
+          offset: offset  + 'px',
+          mobileHA: false
+        });
+      });
+
+      // Expand sidebar on post detail page by default, when post has a toc.
+      var $tocContent = $('.post-toc-content');
+      if (isDesktop() && CONFIG.sidebar === 'post') {
+        if ($tocContent.length > 0 && $tocContent.html().trim().length > 0) {
+          displaySidebar();
+        }
+      }
+    });
+  </script>
+
+
+
 
   <script type="text/javascript">
     $(document).ready(function () {
