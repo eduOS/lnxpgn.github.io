@@ -1,18 +1,1 @@
-$(document).ready(function() {
-  $('.content img').each(function () {
-    var $image = $(this);
-    var $imageWrapLink = $image.parent('a');
-
-    if ($imageWrapLink.size() < 1) {
-      $imageWrapLink = $image.wrap('<a href="' + this.getAttribute('src') + '"></a>').parent('a');
-    }
-    $imageWrapLink.addClass('fancybox');
-  });
-});
-$('.fancybox').fancybox({
-  helpers: {
-    overlay: {
-      locked: false
-    }
-  }
-});
+$(document).ready(function(){$(".content img").each(function(){var a=$(this),e=a.parent("a");e.size()<1&&(e=a.wrap('<a href="'+this.getAttribute("src")+'"></a>').parent("a")),e.addClass("fancybox")})}),$(".fancybox").fancybox({helpers:{overlay:{locked:!1}}});
