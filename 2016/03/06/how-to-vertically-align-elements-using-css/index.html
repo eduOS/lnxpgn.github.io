@@ -1,0 +1,628 @@
+<!doctype html>
+<html class="theme-next use-motion theme-next-mist">
+<head>
+  
+
+<meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+
+
+
+  <link rel="stylesheet" type="text/css" href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5"/>
+
+
+<link rel="stylesheet" type="text/css" href="/css/main.css?v=0.4.3"/>
+
+
+    <meta name="description" content="lnxpgn's tech blog" />
+
+
+
+  <meta name="keywords" content="CSS,translation,vertically align,垂直对齐,翻译," />
+
+
+
+  <link rel="alternate" href="/atom.xml" title="竹里馆" type="application/atom+xml" />
+
+
+
+  <link rel="shorticon icon" type="image/x-icon" href="/favicon.ico?v=0.4.3" />
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var CONFIG = {
+    scheme: 'Mist',
+    analytics: {
+      google: 'UA-65825798-1'
+    },
+    sidebar: 'post'
+  };
+</script>
+
+
+
+
+  <title> 如何使用CSS垂直对齐元素 // 竹里馆 </title>
+</head>
+
+<body>
+  <!--[if lte IE 8]>
+  <div style=' clear: both; height: 59px; padding:0 0 0 15px; position: relative;margin:0 auto;'>
+    <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+      <img src="http://7u2nvr.com1.z0.glb.clouddn.com/picouterie.jpg" border="0" height="42" width="820"
+           alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today or use other browser ,like chrome firefox safari."
+           style='margin-left:auto;margin-right:auto;display: block;'/>
+    </a>
+  </div>
+<![endif]-->
+
+  <div class="container one-column page-post-detail">
+    <div class="headband"></div>
+
+    <div id="header" class="header">
+      <div class="header-inner">
+        <h1 class="site-meta">
+  <span class="logo-line-before"><i></i></span>
+  <a href="/" class="brand">
+      <span class="logo">
+        <i class="icon-logo"></i>
+      </span>
+      <span class="site-title">竹里馆</span>
+  </a>
+  <span class="logo-line-after"><i></i></span>
+</h1>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<div class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu ">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/">
+            <i class="menu-item-icon icon-home"></i> <br />
+            Home
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about">
+            <i class="menu-item-icon icon-about"></i> <br />
+            About
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives">
+            <i class="menu-item-icon icon-archives"></i> <br />
+            Archives
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags">
+            <i class="menu-item-icon icon-tags"></i> <br />
+            Tags
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+</div>
+
+
+      </div>
+    </div>
+
+    <div id="main" class="main">
+      <div class="main-inner">
+        <div id="content" class="content">
+          
+
+  <div id="posts" class="posts-expand">
+    
+
+  <div class="post post-type-normal ">
+    <div class="post-header">
+
+      
+      
+        <h1 class="post-title">
+          
+          
+            
+              如何使用CSS垂直对齐元素
+            
+          
+        </h1>
+      
+
+      <div class="post-meta">
+        <span class="post-time">
+          Posted on 2016-03-06
+        </span>
+
+        
+
+        
+          
+        
+      </div>
+    </div>
+
+    <div class="post-body">
+
+      
+      
+
+      
+        <p>&#x539F;&#x6587;&#xFF1A;<a href="http://createdineden.com/blog/2014/september/24/a-professional-guide-how-to-vertically-align-elements-using-css/" target="_blank" rel="external">A Professional Guide: How to Vertically Align Elements Using CSS</a></p>
+<p>&#x4EFB;&#x4F55;&#x4E00;&#x4E2A;Web&#x5F00;&#x53D1;&#x4EBA;&#x5458;&#x90FD;&#x4F1A;&#x9047;&#x5230;&#x5782;&#x76F4;&#x5BF9;&#x9F50;&#x8FD9;&#x4E2A;&#x8001;&#x95EE;&#x9898;&#x3002;&#x6211;&#x5728;Web&#x9886;&#x57DF;&#x5DE5;&#x4F5C;&#x4E86;&#x5C06;&#x8FD1;&#x4E00;&#x5E74;&#xFF0C;&#x5DF2;&#x7ECF;&#x88AB;&#x5BA2;&#x6237;&#x95EE;&#x4E86;&#x591A;&#x6B21;&#x201C;&#x628A;&#x8FD9;&#x4E2A;&#x5BF9;&#x9F50;&#x5230;&#x7A97;&#x53E3;&#x4E2D;&#x592E;&#x201D;&#x6216;&#x201C;&#x628A;&#x90A3;&#x4E2A;&#x653E;&#x5230;&#x90A3;&#x4E2A;&#x7684;&#x4E2D;&#x90E8;&#x201D;&#x3002;&#x4F7F;&#x7528;CSS&#x5BB9;&#x6613;&#x5B9E;&#x73B0;&#x6C34;&#x5E73;&#x5BF9;&#x9F50;&#xFF1A;</p>
+<p>&#x5BF9;&#x4E8E;&#x5757;&#x7EA7;&#x5143;&#x7D20;&#xFF08;block-level element&#xFF09;</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="rule"><span class="attribute">display</span>:<span class="value"> block</span></span>; <span class="rule"><span class="attribute">margin</span>:<span class="value"> <span class="number">0</span> auto</span></span>;</span><br></pre></td></tr></table></figure>
+<p>&#x5BF9;&#x4E8E;&#x5185;&#x8054;&#x5143;&#x7D20;&#xFF08;inline element&#xFF0C;&#x4E5F;&#x53EB;&#x884C;&#x5185;&#x5143;&#x7D20;&#xFF09;</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="rule"><span class="attribute">display</span>:<span class="value"> inline-block</span></span>; <span class="rule"><span class="attribute">text-align</span>:<span class="value"> center</span></span>;</span><br></pre></td></tr></table></figure>
+<p>&#x4E3A;&#x4EC0;&#x4E48;&#x5782;&#x76F4;&#x5BF9;&#x9F50;&#x4E0D;&#x80FD;&#x5982;&#x6B64;&#x7B80;&#x5355;&#xFF1F;&#x95EE;&#x9898;&#x5728;&#x4E8E;&#x7F51;&#x7AD9;&#x4F20;&#x7EDF;&#x4E0A;&#x5E76;&#x4E0D;&#x662F;&#x4E3A;&#x4E86;&#x5782;&#x76F4;&#x5BF9;&#x9F50;&#xFF0C;&#x7F51;&#x9875;&#x662F;&#x6A2A;&#x5411;&#x7F29;&#x653E;&#x7684;&#xFF0C;&#x9AD8;&#x5EA6;&#x6539;&#x53D8;&#x4EE5;&#x9002;&#x5E94;&#x5185;&#x5BB9;&#x3002;&#x6211;&#x4EEC;&#x5E78;&#x8FD0;&#x7684;&#x662F;CSS&#x6709;&#x591A;&#x79CD;&#x65B9;&#x6CD5;&#x53EF;&#x4EE5;&#x7ED5;&#x8FC7;&#x8FD9;&#x4E2A;&#x95EE;&#x9898;&#xFF0C;&#x6709;&#x4E9B;&#x65B9;&#x6CD5;&#x597D;&#x4E8E;&#x5176;&#x4ED6;&#xFF0C;&#x6709;&#x4E9B;&#x5219;&#x662F;&#x5341;&#x5206;&#x7CDF;&#x7CD5;&#xFF0C;&#x4E0D;&#x5E94;&#x8BE5;&#x88AB;&#x4F7F;&#x7528;&#x3002;&#x8BB0;&#x4F4F;&#x8FD9;&#x4E9B;&#x90FD;&#x662F;&#x76F8;&#x5BF9;&#x7684;&#xFF08;&#x6709;&#x65F6;&#x662F;&#x7EDD;&#x5BF9;&#x7684;&#xFF09;&#xFF0C;&#x4E00;&#x4E2A;&#x53EF;&#x4EE5;&#x5728;&#x67D0;&#x79CD;&#x60C5;&#x51B5;&#x4E0B;&#x89E3;&#x51B3;&#x95EE;&#x9898;&#x7684;&#x65B9;&#x6CD5;&#x53EF;&#x80FD;&#x4E0D;&#x80FD;&#x89E3;&#x51B3;&#x53E6;&#x4E00;&#x79CD;&#x60C5;&#x51B5;&#x7684;&#x95EE;&#x9898;&#x3002;</p>
+<a id="more"></a>
+<h2 id="&#x9996;&#x5148;vertical-align&#x5C5E;&#x6027;">&#x9996;&#x5148;&#xFF0C;vertical-align&#x5C5E;&#x6027;</h2>
+<p>&#x5F00;&#x53D1;&#x4EBA;&#x5458;&#x90FD;&#x6709;&#x8FD9;&#x4E2A;&#x65F6;&#x5019;&#xFF1A;&#x9996;&#x5148;&#x4F1A;&#x627E;&#x5230;vertical-align&#x5C5E;&#x6027;&#xFF0C;&#x51E0;&#x5206;&#x949F;&#x540E;&#x5219;&#x7591;&#x60D1;&#x5B83;&#x5230;&#x5E95;&#x6709;&#x4EC0;&#x4E48;&#x542B;&#x4E49;&#xFF0C;&#x7279;&#x522B;&#x662F;&#x5728;&#x4F7F;&#x7528;&#x8FD9;&#x4E2A;&#x5C5E;&#x6027;&#x540E;&#x8BE5;&#x6B7B;&#x7684;&#x5782;&#x76F4;&#x5BF9;&#x9F50;&#x4ECD;&#x4E0D;&#x594F;&#x6548;&#xFF01;&#xFF01;&#xFF01;&#x65E0;&#x7591;&#x6211;&#x4EEC;&#x90FD;&#x66FE;&#x7ECF;&#x9519;&#x8BEF;&#x5730;&#x4F7F;&#x7528;&#x5B83;&#xFF0C;&#x4F46;&#x518D;&#x4E5F;&#x4E0D;&#x4F1A;&#x4E86;&#xFF01;</p>
+<p>vertical-align&#x5C5E;&#x6027;&#x89C4;&#x5B9A;&#x4E86;&#x6392;&#x6210;&#x4E00;&#x884C;&#x7684;&#x5144;&#x5F1F;&#x5143;&#x7D20;&#x5F7C;&#x6B64;&#x95F4;&#x662F;&#x5982;&#x4F55;&#x5BF9;&#x9F50;&#x7684;&#x3002;&#x5B83;&#x9002;&#x7528;&#x4E8E;&#x5185;&#x8054;&#x5143;&#x7D20;&#xFF08;inline element&#xFF09;&#x548C;table cell&#x5143;&#x7D20;&#x3002;</p>
+<p>&#x9002;&#x7528;&#x4E8E;&#x5185;&#x8054;&#x5143;&#x7D20;&#x65F6;&#x7684;&#x503C;&#xFF1A;</p>
+<p><strong>baseline</strong>&#xFF1A;&#x5C06;&#x5B50;&#x5143;&#x7D20;&#x6587;&#x672C;&#x7684;&#x57FA;&#x7EBF;&#xFF08;base line&#xFF09;&#x4E0E;&#x7236;&#x5143;&#x7D20;&#x7684;&#x57FA;&#x7EBF;&#x5BF9;&#x9F50;&#x3002;&#x60F3;&#x8C61;&#x57FA;&#x7EBF;&#x5C31;&#x662F;&#x5E26;&#x6709;&#x6A2A;&#x7EBF;&#x7684;&#x5199;&#x4F5C;&#x7EB8;&#x4E0A;&#x7684;&#x6A2A;&#x7EBF;&#x3002;&#x8FD9;&#x662F;&#x9ED8;&#x8BA4;&#x503C;&#xFF1B;</p>
+<p><strong>bottom</strong>&#xFF1A;&#x5C06;&#x5B50;&#x5143;&#x7D20;&#x7684;&#x5E95;&#x90E8;&#x4E0E;<strong><em>&#x884C;</em></strong> &#x7684;&#x5E95;&#x90E8;&#x5BF9;&#x9F50;&#xFF1B;</p>
+<p><strong>middle</strong>&#xFF1A;&#x5C06;&#x5B50;&#x5143;&#x7D20;&#x7684;&#x4E2D;&#x5FC3;&#x7EBF;&#x4E0E;&#x7236;&#x5143;&#x7D20;&#x7684;&#x4E2D;&#x5FC3;&#x7EBF;&#x5BF9;&#x9F50;&#xFF08;&#x8BD1;&#x8005;&#x6CE8;&#xFF1A;&#x5143;&#x7D20;&#x7684;&#x4E2D;&#x5FC3;&#x7EBF;&#x6BD4;&#x57FA;&#x7EBF;&#x9AD8;&#x4E00;&#x70B9;&#xFF09;&#xFF1B;</p>
+<p><strong>sub</strong>&#xFF1A;&#x5C06;&#x5B50;&#x5143;&#x7D20;&#x7684;&#x57FA;&#x7EBF;&#x4E0E;&#x7236;&#x5143;&#x7D20;&#x7684;&#x4E0B;&#x6807;&#x57FA;&#x7EBF;&#x5BF9;&#x9F50;&#xFF1B;</p>
+<p><strong>super</strong>&#xFF1A;&#x5C06;&#x5B50;&#x5143;&#x7D20;&#x7684;&#x57FA;&#x7EBF;&#x4E0E;&#x7236;&#x5143;&#x7D20;&#x7684;&#x4E0A;&#x6807;&#x57FA;&#x7EBF;&#x5BF9;&#x9F50;&#xFF1B;</p>
+<p><strong>text-bottom</strong>&#xFF1A;&#x5C06;&#x5B50;&#x5143;&#x7D20;&#x7684;&#x5E95;&#x90E8;&#x4E0E;&#x7236;&#x5143;&#x7D20;&#x5B57;&#x4F53;&#x7684;&#x6700;&#x5E95;&#x90E8;&#x5BF9;&#x9F50;&#xFF08;&#x8BD1;&#x8005;&#x6CE8;&#xFF1A;&#x5373;&#x4E0E;&#x7236;&#x5143;&#x7D20;&#x7684;&#x6587;&#x672C;&#x5185;&#x5BB9;&#x533A;&#x7684;&#x6700;&#x5E95;&#x90E8;&#x5BF9;&#x9F50;&#xFF09;&#xFF1B;</p>
+<p><strong>text-top</strong>&#xFF1A;&#x5C06;&#x5B50;&#x5143;&#x7D20;&#x7684;&#x9876;&#x90E8;&#x4E0E;&#x7236;&#x5143;&#x7D20;&#x5B57;&#x4F53;&#x7684;&#x6700;&#x9876;&#x90E8;&#x5BF9;&#x9F50;&#xFF08;&#x8BD1;&#x8005;&#x6CE8;&#xFF1A;&#x5373;&#x4E0E;&#x7236;&#x5143;&#x7D20;&#x7684;&#x6587;&#x672C;&#x5185;&#x5BB9;&#x533A;&#x7684;&#x6700;&#x9876;&#x90E8;&#x5BF9;&#x9F50;&#xFF09;&#xFF1B;</p>
+<p><strong>top</strong>&#xFF1A;&#x5C06;&#x5B50;&#x5143;&#x7D20;&#x7684;&#x9876;&#x90E8;&#x4E0E;<strong><em>&#x884C;</em></strong> &#x7684;&#x9876;&#x90E8;&#x5BF9;&#x9F50;&#xFF1B;</p>
+<p><strong>length</strong>&#xFF1A;&#x5C06;&#x5B50;&#x5143;&#x7D20;&#x6587;&#x672C;&#x7684;&#x57FA;&#x7EBF;&#x503C;&#x8BBE;&#x4E3A;&#x7236;&#x5143;&#x7D20;&#x7684;&#x57FA;&#x7EBF;&#x503C;&#x52A0;&#x4E0A;<strong><em>length</em></strong>&#x6240;&#x7ED9;&#x5B9A;&#x7684;&#x503C;&#xFF1B;</p>
+<p class="codepen" data-height="268" data-theme-id="8525" data-slug-hash="neDlk" data-default-tab="result" data-user="edenagency">See the Pen <a href="http://codepen.io/edenagency/pen/neDlk/" target="_blank" rel="external">The vertical-align property</a> by Eden Agency (<a href="http://codepen.io/edenagency" target="_blank" rel="external">@edenagency</a>) on <a href="http://codepen.io" target="_blank" rel="external">CodePen</a>.</p>
+<script async="async" src="//codepen.io/assets/embed/ei.js"></script>
+<p>&#x5F53;vertical-align&#x88AB;&#x8BEF;&#x7528;&#x65F6;&#xFF0C;vertical-align: middle&#x901A;&#x5E38;&#x662F;&#x7F6A;&#x9B41;&#x7978;&#x9996;&#xFF0C;&#x6700;&#x5E38;&#x89C1;&#x7684;&#x539F;&#x56E0;&#x662F;&#x7528;&#x5728;&#x4E86;&#x5757;&#x7EA7;&#x5143;&#x7D20;&#x4E0A;&#x3002;&#x8BB0;&#x4F4F;&#xFF0C;&#x5B83;&#x4EC5;&#x5728;inline&#x548C;inline-block&#x5143;&#x7D20;&#x4E0A;&#x6709;&#x6548;&#x3002;&#x5982;&#x679C;&#x7528;&#x5728;&#x4E86;&#x5757;&#x7EA7;&#x5143;&#x7D20;&#x4E0A;&#xFF0C;&#x6240;&#x6709;&#x5B50;&#x5143;&#x7D20;&#x90FD;&#x4F1A;&#x7EE7;&#x627F;&#x5B83;&#x7684;&#x503C;&#x3002;</p>
+<p>vertical-align&#x4E5F;&#x53EF;&#x7528;&#x4E8E;HTML&#x8868;&#x683C;&#x7684;&#x5355;&#x5143;&#x683C;&#x3002;&#x9002;&#x7528;&#x4E8E;&#x5355;&#x5143;&#x683C;&#x65F6;&#x7684;&#x503C;&#xFF1A;</p>
+<p><strong>top</strong>&#xFF1A;&#x5C06;&#x5355;&#x5143;&#x683C;&#x7684;&#x5185;&#x5BB9;&#x4E0E;&#x5355;&#x5143;&#x683C;&#x7684;&#x9876;&#x90E8;&#x5BF9;&#x9F50;&#xFF1B;</p>
+<p><strong>middle</strong>&#xFF1A;&#x5C06;&#x5355;&#x5143;&#x683C;&#x7684;&#x5185;&#x5BB9;&#x4E0E;&#x5355;&#x5143;&#x683C;&#x7684;&#x4E2D;&#x5FC3;&#x5BF9;&#x9F50;&#xFF1B;</p>
+<p><strong>bottom</strong>&#xFF1A;&#x5C06;&#x5355;&#x5143;&#x683C;&#x7684;&#x5185;&#x5BB9;&#x4E0E;&#x5355;&#x5143;&#x683C;&#x7684;&#x5E95;&#x90E8;&#x5BF9;&#x9F50;&#xFF1B;</p>
+<p>&#x73B0;&#x5728;&#x6E05;&#x6670;&#x4E86;&#xFF0C;&#x8BA9;&#x6211;&#x4EEC;&#x6765;&#x770B;&#x770B;&#x600E;&#x4E48;&#x89E3;&#x51B3;&#x5728;&#x5757;&#x7EA7;&#x5143;&#x7D20;&#x4E0A;&#x7684;&#x95EE;&#x9898;&#x3002;</p>
+<p>&#x8BD1;&#x8005;&#x6CE8;&#xFF1A;vertical-align&#x5C5E;&#x6027;&#x7684;&#x542B;&#x4E49;&#x548C;&#x56FE;&#x89E3;&#x4E5F;&#x53EF;&#x53C2;&#x8003;<a href="http://bitsofco.de/the-vertical-align-property/" target="_blank" rel="external">&#x8FD9;&#x91CC;</a></p>
+<h2 id="line-height">Line height</h2>
+<p>&#x8FD9;&#x662F;&#x9879;&#x7B80;&#x5355;&#x7684;&#x6280;&#x672F;&#xFF0C;&#x4F60;&#x53EA;&#x60F3;&#x4E2D;&#x5FC3;&#x5BF9;&#x9F50;&#x4E00;&#x884C;&#x6587;&#x672C;&#x65F6;&#x6548;&#x679C;&#x5F88;&#x597D;&#x3002;&#x4E5F;&#x53EF;&#x7528;&#x4E8E;&#x56FE;&#x7247;&#xFF0C;&#x867D;&#x7136;&#x8FD9;&#x662F;&#x4E00;&#x79CD;hack&#xFF0C;&#x5C3D;&#x91CF;&#x907F;&#x514D;&#x4F7F;&#x7528;&#x3002;</p>
+<p class="codepen" data-height="347" data-theme-id="8525" data-slug-hash="GiLdm" data-default-tab="result" data-user="edenagency">See the Pen <a href="http://codepen.io/edenagency/pen/GiLdm/" target="_blank" rel="external">Vertical alignment using line height</a> by Eden Agency (<a href="http://codepen.io/edenagency" target="_blank" rel="external">@edenagency</a>) on <a href="http://codepen.io" target="_blank" rel="external">CodePen</a>.</p>
+<p>&#x8FD9;&#x4E2A;&#x4F8B;&#x5B50;&#x5305;&#x542B;&#x4E86;&#x4E24;&#x4E2A;&#x5143;&#x7D20;&#xFF0C;&#x4E00;&#x4E2A;&#x662F;&#x7236;&#x5143;&#x7D20;&#xFF0C;&#x4E00;&#x4E2A;&#x662F;&#x5B50;&#x5143;&#x7D20;&#x3002;line height&#x8BBE;&#x7F6E;&#x5728;&#x5B50;&#x5143;&#x7D20;&#x4E0A;&#xFF0C;&#x53CD;&#x8FC7;&#x6765;&#x5F3A;&#x5236;&#x7236;&#x5143;&#x7D20;&#x8C03;&#x6574;&#x5230;&#x76F8;&#x540C;&#x9AD8;&#x5EA6;&#x3002;&#x6CE8;&#x610F;&#xFF1A;&#x4E3A;&#x8BA9;&#x8FD9;&#x9879;&#x6280;&#x672F;&#x51D1;&#x6548;&#xFF0C;line height&#x7684;&#x503C;&#x5FC5;&#x987B;&#x5927;&#x4E8E;&#x5B57;&#x4F53;&#x5927;&#x5C0F;&#x6216;&#x56FE;&#x7247;&#x7684;&#x9AD8;&#x5EA6;&#x3002;&#x4E3A;&#x4E86;&#x7528;&#x5728;&#x56FE;&#x7247;&#x4E0A;&#xFF0C;&#x5FC5;&#x987B;&#x628A;vertical-align: middle&#x6DFB;&#x52A0;&#x5230;&#x56FE;&#x7247;&#x3002;</p>
+<p>&#x5982;&#x6211;&#x4E4B;&#x524D;&#x6240;&#x8BF4;&#xFF0C;&#x8FD9;&#x662F;&#x4E00;&#x79CD;hack&#xFF0C;&#x7A0D;&#x540E;&#x63D0;&#x53CA;&#x80FD;&#x4EA7;&#x751F;&#x540C;&#x6837;&#x6548;&#x679C;&#x7684;&#x65B9;&#x6CD5;&#x3002;</p>
+<p><strong>&#x4F18;&#x70B9;&#xFF1A;</strong></p>
+<p>&#x5BB9;&#x6613;&#x5B9E;&#x73B0;</p>
+<p><strong>&#x7F3A;&#x70B9;&#xFF1A;</strong></p>
+<p>&#x53EA;&#x80FD;&#x7528;&#x4E8E;&#x4E00;&#x884C;&#x6587;&#x672C;&#xFF0C;&#x5F53;&#x7528;&#x4E8E;&#x6587;&#x672C;&#x4E4B;&#x5916;&#x65F6;&#xFF0C;&#x5B83;&#x4E0D;&#x591F;&#x6B63;&#x89C4;&#xFF0C;&#x4E0D;&#x591F;&#x4F18;&#x96C5;&#x3002;</p>
+<h2 id="css&#x8868;&#x683C;">CSS&#x8868;&#x683C;</h2>
+<p>&#x662F;CSS&#x7684;&#x8868;&#x683C;&#x4E0D;&#x662F;HTML&#x7684;&#x8868;&#x683C;&#x3002;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;display: table&#x8BA9;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#x8868;&#x73B0;&#x5F97;&#x50CF;&#x4E2A;&#x8868;&#x683C;&#x3002;&#x8FD9;&#x4E9B;&#x5C5E;&#x6027;&#x57FA;&#x4E8E;&#x539F;&#x6765;&#x7684;HTML&#x8868;&#x683C;&#x5143;&#x7D20;&#xFF0C;&#x4E14;&#x884C;&#x4E3A;&#x4E00;&#x81F4;&#x3002;</p>
+<p class="codepen" data-height="268" data-theme-id="8525" data-slug-hash="iwBua" data-default-tab="result" data-user="edenagency">See the Pen <a href="http://codepen.io/edenagency/pen/iwBua/" target="_blank" rel="external">Vertical alignment using css table properties</a> by Eden Agency (<a href="http://codepen.io/edenagency" target="_blank" rel="external">@edenagency</a>) on <a href="http://codepen.io" target="_blank" rel="external">CodePen</a>.</p>
+<p>&#x5728;&#x8FD9;&#x4E2A;&#x793A;&#x4F8B;&#x4E2D;&#xFF0C;&#x7236;&#x5143;&#x7D20;&#x5F53;&#x4F5C;&#x8868;&#x683C;&#xFF0C;&#x5B50;&#x5143;&#x7D20;&#x4F5C;&#x4E3A;&#x8868;&#x683C;&#x7684;&#x5355;&#x5143;&#x683C;&#x3002;vertical-align: middle&#x4F7F;&#x5355;&#x5143;&#x683C;&#x5B8C;&#x7F8E;&#x5C45;&#x4E2D;&#xFF0C;&#x6240;&#x6709;&#x7684;&#x5355;&#x5143;&#x683C;&#x7EE7;&#x627F;&#x4E86;&#x5176;&#x7236;&#x5143;&#x7D20;&#x7684;&#x9AD8;&#x5EA6;&#x3002;</p>
+<p><strong>&#x4F18;&#x70B9;&#xFF1A;</strong></p>
+<p>&#x5B8C;&#x5168;&#x50CF;HTML&#x8868;&#x683C;&#x4E00;&#x6837;&#x8FD0;&#x4F5C;&#xFF0C;&#x5E76;&#x4E14;&#x8BED;&#x4E49;&#x4E0A;&#x6B63;&#x786E;&#xFF1B;
+&#x4E0D;&#x9700;&#x8981;&#x5B9A;&#x4E49;&#x9AD8;&#x5EA6;&#x548C;&#x5BBD;&#x5EA6;&#x3002;</p>
+<p><strong>&#x7F3A;&#x70B9;&#xFF1A;</strong></p>
+<p>&#x9664;&#x975E;&#x5B9A;&#x4E49;&#x4E86;&#x5BBD;&#x5EA6;&#xFF0C;&#x8868;&#x683C;&#x4F1A;&#x5C55;&#x5F00;&#x5230;&#x5176;&#x5305;&#x542B;&#x7684;&#x5185;&#x5BB9;&#x7684;&#x5BBD;&#x5EA6;&#xFF1B;</p>
+<p>&#x5982;&#x679C;&#x4F60;&#x5728;&#x7236;&#x5143;&#x7D20;&#x4E2D;&#x9700;&#x8981;&#x53E6;&#x4E00;&#x4E2A;&#x5757;&#x7EA7;&#x5143;&#x7D20;&#x5E76;&#x4E14;&#x4E0D;&#x60F3;&#x628A;&#x5B83;&#x5F53;&#x6210;table cell&#xFF0C;&#x4E8B;&#x60C5;&#x5C31;&#x53D8;&#x5F97;&#x6DF7;&#x4E71;&#xFF1B;</p>
+<p>&#x4E5F;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;HTML&#x8868;&#x683C;&#x6765;&#x5B9E;&#x73B0;&#xFF0C;&#x7136;&#x800C;&#x5E94;&#x8BE5;&#x907F;&#x514D;&#x4F7F;&#x7528;HTML&#x5143;&#x7D20;&#x53BB;&#x8BBE;&#x8BA1;&#x9875;&#x9762;&#x7684;&#x6837;&#x5F0F;&#xFF0C;&#x90A3;&#x662F;CSS&#x7684;&#x4E8B;&#x60C5;&#xFF0C;&#x8BED;&#x4E49;&#x4E0A;&#x4E5F;&#x662F;&#x9519;&#x8BEF;&#x7684;&#xFF0C;&#x9664;&#x975E;&#x4F60;&#x7684;&#x5185;&#x5BB9;&#x9002;&#x7528;&#x4E8E;&#x8868;&#x683C;&#xFF0C;&#x6BD4;&#x5982;&#x5217;&#x8F66;&#x65F6;&#x523B;&#x8868;&#x3002;</p>
+<h2 id="&#x7EDD;&#x5BF9;&#x5B9A;&#x4F4D;">&#x7EDD;&#x5BF9;&#x5B9A;&#x4F4D;</h2>
+<p>&#x4E3A;&#x4E86;&#x4F7F;&#x7528;position: absolute&#x6765;&#x5782;&#x76F4;&#x5BF9;&#x9F50;&#x4F60;&#x9009;&#x62E9;&#x7684;&#x5143;&#x7D20;&#xFF0C;&#x9700;&#x8981;&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x9AD8;&#x5EA6;&#xFF0C;&#x4F7F;&#x7528;&#x50CF;&#x7D20;&#x6216;&#x767E;&#x5206;&#x6BD4;&#x3002;</p>
+<p class="codepen" data-height="344" data-theme-id="8525" data-slug-hash="GuqjD" data-default-tab="result" data-user="edenagency">See the Pen <a href="http://codepen.io/edenagency/pen/GuqjD/" target="_blank" rel="external">Vertical alignment using absolute positioning</a> by Eden Agency (<a href="http://codepen.io/edenagency" target="_blank" rel="external">@edenagency</a>) on <a href="http://codepen.io" target="_blank" rel="external">CodePen</a>.</p>
+<p>&#x6709;&#x4E24;&#x79CD;&#x65B9;&#x6CD5;&#x53EF;&#x5C45;&#x4E2D;&#x5B50;&#x5143;&#x7D20;&#x3002;&#x7B2C;&#x4E00;&#x79CD;&#x9009;&#x62E9;&#xFF0C;&#x5982;&#x4E0A;&#x56FE;&#x6240;&#x793A;&#xFF0C;&#x7528;top: 50%&#x4E0B;&#x79FB;&#x5B50;&#x5143;&#x7D20;&#xFF0C;&#x7528;transform: translateY(-50%)&#x4E0A;&#x79FB;&#x5B50;&#x5143;&#x7D20;&#x9AD8;&#x5EA6;&#x7684;&#x4E00;&#x534A;&#xFF0C;&#x4EE5;&#x81F4;&#x5B50;&#x5143;&#x7D20;&#x7684;&#x4E2D;&#x5FC3;&#x4E0E;&#x7236;&#x5143;&#x7D20;&#x7684;&#x4F4D;&#x4E8E;&#x540C;&#x4E00;&#x884C;&#x3002;&#x4E5F;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x8D1F;&#x503C;&#x7684;&#x5916;&#x8FB9;&#x8DDD;&#xFF08;margin&#xFF09;&#x5B9E;&#x73B0;&#xFF1B;&#x7B2C;&#x4E8C;&#x79CD;&#x9009;&#x62E9;&#x662F;&#x628A;&#x5B50;&#x5143;&#x7D20;&#x7684;top, bottom, left, right&#x5C5E;&#x6027;&#x7684;&#x503C;&#x5747;&#x8BBE;&#x4E3A;0&#xFF0C;&#x5916;&#x8FB9;&#x8DDD;&#x5747;&#x8BBE;&#x6210;auto&#xFF0C;&#x7136;&#x800C;&#x7528;&#x8FD9;&#x79CD;&#x65B9;&#x6CD5;&#x6211;&#x5F97;&#x5230;&#x8FC7;&#x4E0D;&#x540C;&#x7684;&#x7ED3;&#x679C;&#xFF0C;&#x6700;&#x597D;&#x8FD8;&#x662F;&#x9009;&#x62E9;&#x7B2C;&#x4E00;&#x79CD;&#x3002;</p>
+<p><strong>&#x4F18;&#x70B9;&#xFF1A;</strong></p>
+<p>&#x5C3A;&#x5BF8;&#x4F7F;&#x7528;&#x767E;&#x5206;&#x6BD4;&#x80FD;&#x4F7F;&#x5143;&#x7D20;&#x81EA;&#x9002;&#x5E94;&#x3002;</p>
+<p><strong>&#x7F3A;&#x70B9;&#xFF1A;</strong></p>
+<p>&#x9700;&#x8981;&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x9AD8;&#x5EA6;&#xFF0C;&#x6709;&#x65F6;&#x8FD9;&#x662F;&#x4E0D;&#x53EF;&#x80FD;&#x7684;&#xFF1B;</p>
+<p>&#x5982;&#x679C;&#x4E0D;&#x6B62;&#x4E00;&#x4E2A;&#x5B50;&#x5143;&#x7D20;&#xFF0C;&#x53EF;&#x80FD;&#x6709;&#x91CD;&#x53E0;&#x95EE;&#x9898;&#xFF0C;&#x9664;&#x975E;&#x5B83;&#x4EEC;&#x4E5F;&#x662F;&#x7EDD;&#x5BF9;&#x5B9A;&#x4F4D;&#x3002;</p>
+<p>&#x4F60;&#x5FC5;&#x987B;&#x8BB0;&#x5F97;&#x76F8;&#x5BF9;&#x5730;&#x6216;&#x7EDD;&#x5BF9;&#x5730;&#x5B9A;&#x4F4D;&#x4F60;&#x7684;&#x7236;&#x5143;&#x7D20;&#xFF0C;&#x5426;&#x5219;&#x5B50;&#x5143;&#x7D20;&#x4E0D;&#x4F1A;&#x5C45;&#x4E2D;&#x3002;</p>
+<h2 id="&#x5E7D;&#x7075;&#x5143;&#x7D20;">&#x5E7D;&#x7075;&#x5143;&#x7D20;</h2>
+<p>&#x8FD9;&#x9879;&#x6280;&#x672F;&#x6700;&#x521D;&#x5728;CSS Tricks&#x7684;&#x535A;&#x5BA2;&#x6587;&#x7AE0;<a href="http://css-tricks.com/centering-in-the-unknown/" target="_blank" rel="external">&quot;Centering in the Unknown&quot;</a>&#x4E2D;&#x63D0;&#x53CA;&#x3002;&#x4E00;&#x4E2A;&#x5E7D;&#x7075;&#x5143;&#x7D20;&#x7528;&#x4E8E;&#x5728;&#x7236;&#x5143;&#x7D20;&#x4E2D;&#x5C45;&#x4E2D;&#x5B50;&#x5143;&#x7D20;&#x3002;&#x56E0;&#x4E3A;&#x5E7D;&#x7075;&#x5143;&#x7D20;&#x88AB;&#x8D4B;&#x4E8E;&#x4E86;&#x4E00;&#x4E2A;100%&#x7684;&#x9AD8;&#x5EA6;&#xFF0C;&#x6CA1;&#x6709;&#x5FC5;&#x8981;&#x4E3A;&#x7236;&#x5143;&#x7D20;&#x6216;&#x5B50;&#x5143;&#x7D20;&#x5B9A;&#x4E49;&#x9AD8;&#x5EA6;&#x3002;&#x5F53;&#x65E0;&#x6CD5;&#x77E5;&#x9053;&#x5C3A;&#x5BF8;&#x65F6;&#xFF0C;&#x8FD9;&#x662F;&#x4E00;&#x79CD;&#x7406;&#x60F3;&#x7684;&#x65B9;&#x6CD5;&#x3002;</p>
+<p class="codepen" data-height="295" data-theme-id="8525" data-slug-hash="trKAu" data-default-tab="result" data-user="edenagency">See the Pen <a href="http://codepen.io/edenagency/pen/trKAu/" target="_blank" rel="external">Vertical alignment using the &apos;Ghost Element&apos;</a> by Eden Agency (<a href="http://codepen.io/edenagency" target="_blank" rel="external">@edenagency</a>) on <a href="http://codepen.io" target="_blank" rel="external">CodePen</a>.</p>
+<p>&#x5982;&#x540C;Chris Coyier&#x5728;&#x4ED6;&#x7684;&#x535A;&#x5BA2;&#x4E2D;&#x63D0;&#x53CA;&#x7684;&#xFF0C;Michal Czernow&#x5EFA;&#x8BAE;&#x4F7F;&#x7528;&#x4E00;&#x4E2A;&#x4F2A;&#x5143;&#x7D20;&#x4F5C;&#x4E3A;&#x5E7D;&#x7075;&#x5143;&#x7D20;&#xFF0C;&#x4E0D;&#x7528;&#x53E6;&#x52A0;&#x4E00;&#x4E2A;div&#x4E14;&#x8BED;&#x4E49;&#x4E0A;&#x662F;&#x6B63;&#x786E;&#x7684;&#x3002;</p>
+<p><strong>&#x4F18;&#x70B9;&#xFF1A;</strong></p>
+<p>&#x8BED;&#x4E49;&#x6B63;&#x786E;&#x3002;</p>
+<p><strong>&#x7F3A;&#x70B9;&#xFF1A;</strong></p>
+<p>&#x5B8C;&#x5168;&#x50CF;CSS&#x8868;&#x683C;&#x4E00;&#x6837;&#x8FD0;&#x4F5C;&#xFF0C;&#x4E24;&#x9879;&#x6280;&#x672F;&#x90FD;&#x4E0D;&#x6BD4;&#x53E6;&#x4E00;&#x4E2A;&#x66F4;&#x597D;&#x3002;</p>
+<h2 id="flexbox">Flexbox</h2>
+<p>&#x5728;CSS&#x5BB6;&#x65CF;&#x4E2D;Flexbox&#xFF08;CSS3 &#x5F39;&#x6027;&#x76D2;&#x6A21;&#x578B;&#xFF09;&#x662F;&#x9879;&#x76F8;&#x5BF9;&#x8F83;&#x65B0;&#x7684;&#x6280;&#x672F;&#x3002;&#x6211;&#x4E0D;&#x60F3;&#x6DF1;&#x5165;&#x592A;&#x591A;&#x7EC6;&#x8282;&#xFF0C;&#x6709;&#x5F88;&#x591A;&#x7EC6;&#x8282;&#xFF0C;&#x6240;&#x4EE5;&#x8FD9;&#x91CC;&#x662F;&#x4E00;&#x4E2A;&#x5BF9;&#x5B83;&#x662F;&#x505A;&#x4EC0;&#x4E48;&#x7684;&#x5FEB;&#x901F;&#x63CF;&#x8FF0;&#x3002;</p>
+<p>&#x6839;&#x636E;<a href="http://www.w3.org/TR/2014/WD-css-flexbox-1-20140325/" target="_blank" rel="external">www.w3.org</a>:</p>
+<p>&#x201C;&#x5728;flex&#x5E03;&#x5C40;&#x6A21;&#x578B;&#x4E2D;&#xFF0C;flex&#x5BB9;&#x5668;&#x7684;&#x5B50;&#x5143;&#x7D20;&#x53EF;&#x4EE5;&#x5728;&#x4EFB;&#x4E00;&#x65B9;&#x5411;&#x5C55;&#x5F00;&#xFF0C;&#x5E76;&#x4E14;&#x5B83;&#x4EEC;&#x7684;&#x5927;&#x5C0F;&#x5177;&#x6709;&#x76F8;&#x5F53;&#x7684;&#x5F39;&#x6027;&#xFF0C;&#x5373;&#x80FD;&#x589E;&#x957F;&#x4EE5;&#x586B;&#x5145;&#x672A;&#x4F7F;&#x7528;&#x7684;&#x7A7A;&#x95F4;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x7F29;&#x5C0F;&#x4EE5;&#x9632;&#x6B62;&#x6EA2;&#x51FA;&#x7236;&#x5143;&#x7D20;&#x3002;&#x5B50;&#x5143;&#x7D20;&#x5728;&#x6C34;&#x5E73;&#x548C;&#x5782;&#x76F4;&#x4E24;&#x4E2A;&#x65B9;&#x5411;&#x7684;&#x5BF9;&#x9F50;&#x5747;&#x5BB9;&#x6613;&#x64CD;&#x63A7;&#x3002;&#x76D2;&#x5B50;&#x7684;&#x5D4C;&#x5957;&#xFF08;&#x6C34;&#x5E73;&#x7684;&#x5728;&#x5782;&#x76F4;&#x7684;&#x4E2D;&#xFF0C;&#x6216;&#x8005;&#x5782;&#x76F4;&#x7684;&#x5728;&#x6C34;&#x5E73;&#x7684;&#x4E2D;&#xFF09;&#x53EF;&#x4EE5;&#x5728;&#x4E24;&#x4E2A;&#x7EF4;&#x5EA6;&#x4E0A;&#x6784;&#x5EFA;&#x5E03;&#x5C40;&#x3002;&#x201C;</p>
+<p>&#x603B;&#x7684;&#x6765;&#x8BF4;&#xFF0C;Flexbox&#x4EC5;&#x9002;&#x7528;&#x4E8E;&#x5C0F;&#x578B;&#x7684;&#x53EF;&#x4F38;&#x7F29;&#x5E03;&#x5C40;&#x3002;&#x5B83;&#x5F88;&#x5BB9;&#x6613;&#x5747;&#x7B49;&#x5730;&#xFF08;&#x6216;&#x4E0D;&#x5747;&#x5300;&#x5730;&#xFF09;&#x628A;&#x5B50;&#x5143;&#x7D20;&#x5206;&#x6210;&#x591A;&#x884C;&#x6216;&#x591A;&#x5217;&#xFF0C;&#x6539;&#x53D8;&#x5143;&#x7D20;&#x6D41;&#x52A8;&#x7684;&#x65B9;&#x5411;&#x7B49;&#x7B49;&#x3002;&#x5728;&#x4E00;&#x4E2A;&#x5BB9;&#x5668;&#x4E2D;&#x5782;&#x76F4;&#x5BF9;&#x9F50;&#x4E00;&#x4E2A;&#x5355;&#x4E00;&#x5143;&#x7D20;&#x5341;&#x5206;&#x5730;&#x7B80;&#x5355;&#x3002;</p>
+<p class="codepen" data-height="268" data-theme-id="8525" data-slug-hash="DKCwz" data-default-tab="result" data-user="edenagency">See the Pen <a href="http://codepen.io/edenagency/pen/DKCwz/" target="_blank" rel="external">Vertical alignment using flexbox</a> by Eden Agency (<a href="http://codepen.io/edenagency" target="_blank" rel="external">@edenagency</a>) on <a href="http://codepen.io" target="_blank" rel="external">CodePen</a>.&#xA0;</p>
+<p>&#x5F53;&#x4E00;&#x4E2A;&#x7236;&#x5143;&#x7D20;&#x4ECE;&#x5757;&#x7EA7;&#x5143;&#x7D20;&#x8F6C;&#x53D8;&#x6210;&#x4E00;&#x4E2A;flex&#x5143;&#x7D20;&#xFF0C;&#x5B83;&#x7684;&#x5B50;&#x5143;&#x7D20;&#x4E5F;&#x81EA;&#x52A8;&#x8F6C;&#x53D8;&#x6210;flex&#x5B50;&#x5143;&#x7D20;&#x3002;&#x8BBE;&#x7F6E;&#x5B50;&#x5143;&#x7D20;&#x7684;margin&#x5C5E;&#x6027;&#x4E3A;auto&#x5C06;&#x628A;&#x5B50;&#x5143;&#x7D20;&#x63A8;&#x5411;&#x5176;&#x7236;&#x5143;&#x7D20;&#x7684;&#x4E2D;&#x5FC3;&#xFF0C;&#x6DFB;&#x52A0;&#x66F4;&#x591A;&#x7684;&#x5B50;&#x5143;&#x7D20;&#x4E0D;&#x4F1A;&#x5F71;&#x54CD;&#x5B83;&#x7684;&#x5782;&#x76F4;&#x5C45;&#x4E2D;&#xFF0C;&#x867D;&#x7136;&#x5B83;&#x4F1A;&#x76F8;&#x5BF9;&#x4E8E;&#x5B83;&#x7684;&#x5144;&#x5F1F;&#x5143;&#x7D20;&#x91CD;&#x65B0;&#x6392;&#x5217;&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x5982;&#x679C;&#x6709;&#x592A;&#x591A;&#x7684;&#x5B50;&#x5143;&#x7D20;&#x9700;&#x8981;&#x56FA;&#x5B9A;&#x5728;&#x540C;&#x4E00;&#x884C;&#x4E0A;&#xFF0C;&#x5E76;&#x4E14;&#x7236;&#x5143;&#x7D20;&#x6709;flex-wrap: wrap&#x5C5E;&#x6027;&#xFF0C;&#x591A;&#x4F59;&#x7684;&#x5B50;&#x5143;&#x7D20;&#x4F1A;&#x6389;&#x5230;&#x4E0B;&#x4E00;&#x884C;&#xFF0C;&#x6240;&#x6709;&#x7684;&#x5B50;&#x5143;&#x7D20;&#x5747;&#x5728;&#x5B83;&#x4EEC;&#x7684;&#x7236;&#x5143;&#x7D20;&#x4E2D;&#x5C45;&#x4E2D;&#x5C31;&#x50CF;&#x5B83;&#x4EEC;&#x662F;&#x4E00;&#x4E2A;&#x6574;&#x4F53;&#x3002;</p>
+<p><strong>&#x4F18;&#x70B9;&#xFF1A;</strong></p>
+<p>Flexbox&#x88AB;&#x7528;&#x4E8E;&#x5E94;&#x4ED8;&#x5E03;&#x5C40;&#x95EE;&#x9898;&#xFF0C;&#x5BF9;&#x4E8E;&#x5782;&#x76F4;&#x5BF9;&#x9F50;&#x5B83;&#x662F;&#x5B8C;&#x7F8E;&#x7684;&#x3002;</p>
+<p><strong>&#x7F3A;&#x70B9;&#xFF1A;</strong></p>
+<p>&#x901A;&#x8FC7;&#x4F7F;&#x7528;&#x524D;&#x7F00;&#xFF0C;&#x5B83;&#x867D;&#x7136;&#x548C;&#x6240;&#x6709;&#x6700;&#x65B0;&#x7684;&#x6D4F;&#x89C8;&#x5668;&#x517C;&#x5BB9;&#xFF0C;&#x4F46;&#x4E0D;&#x652F;&#x6301;&#x65E7;&#x7248;&#x672C;&#x7684;&#x6D4F;&#x89C8;&#x5668;&#xFF0C;&#x5982;&#xFF1A;IE9&#x3002;
+&#x5982;&#x679C;&#x4F60;&#x60F3;&#x4E86;&#x89E3;&#x5173;&#x5F00;Flexbox&#x7684;&#x66F4;&#x591A;&#x4FE1;&#x606F;&#xFF0C;&#x770B;&#x4E0B;CSS Tricks&#x7684;<a href="http://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank" rel="external">&quot;A Complete Guide to Flexbox&quot;</a>&#x3002;</p>
+<h2 id="&#x603B;&#x7ED3;">&#x603B;&#x7ED3; &#x3002;&#x3002;&#x3002;</h2>
+<p>&#x6709;&#x5982;&#x4E9B;&#x591A;&#x7684;&#x9009;&#x62E9;&#xFF0C;&#x771F;&#x662F;&#x60CA;&#x5947;&#x4E3A;&#x4EC0;&#x4E48;&#x6211;&#x4EEC;&#x53D1;&#x73B0;&#x5782;&#x76F4;&#x5BF9;&#x9F50;&#x8FD8;&#x662F;&#x5982;&#x4F55;&#x56F0;&#x96BE;&#xFF01;&#x4E0D;&#x5E78;&#x7684;&#x662F;&#x6CA1;&#x6709;&#x4E00;&#x4E2A;&#x6700;&#x4F73;&#x89E3;&#x51B3;&#x65B9;&#x6848;&#x3002;Flexbox&#x770B;&#x4E0A;&#x53BB;&#x66F4;&#x6709;&#x524D;&#x666F;&#xFF0C;&#x552F;&#x4E00;&#x7684;&#x7F3A;&#x70B9;&#x662F;&#x5B83;&#x4E0E;&#x65E7;&#x7248;&#x6D4F;&#x89C8;&#x5668;&#x7684;&#x517C;&#x5BB9;&#x6027;&#xFF0C;&#x7136;&#x800C;&#x6211;&#x60F3;&#x4E00;&#x65E6;&#x89C4;&#x8303;&#x6572;&#x5B9A;&#x5B83;&#x4F1A;&#x662F;&#x6211;&#x4EEC;&#x8981;&#x8F6C;&#x5411;&#x7684;&#x6280;&#x672F;&#x3002;</p>
+
+      
+    </div>
+
+    <div class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/CSS/"> #CSS </a>
+          
+            <a href="/tags/translation/"> #translation </a>
+          
+            <a href="/tags/vertically-align/"> #vertically align </a>
+          
+            <a href="/tags/垂直对齐/"> #垂直对齐 </a>
+          
+            <a href="/tags/翻译/"> #翻译 </a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2015/08/01/hexo-markdown-issues/">Hexo + Markdown issues</a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </div>
+  </div>
+
+
+
+    
+
+    
+      <div class="comments" id="comments">
+        
+      </div>
+    
+  </div>
+
+
+        </div>
+
+        
+      </div>
+
+
+      
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table Of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            Overview
+          </li>
+        </ul>
+      
+
+      <div class="site-overview">
+        <div class="site-author motion-element">
+          <img class="site-author-image" src="/images/funny.jpg" alt="lnxpgn" />
+          <p class="site-author-name">lnxpgn</p>
+        </div>
+        <p class="site-description motion-element">lnxpgn's tech blog</p>
+        <div class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">3</span>
+              <span class="site-state-item-name">posts</span>
+            </a>
+          </div>
+
+          <div class="site-state-item site-state-categories">
+            
+              <span class="site-state-item-count">0</span>
+              <span class="site-state-item-name">categories</span>
+              
+          </div>
+
+          <div class="site-state-item site-state-tags">
+            <a href="/tags">
+              <span class="site-state-item-count">11</span>
+              <span class="site-state-item-name">tags</span>
+              </a>
+          </div>
+
+        </div>
+
+        
+          <div class="feed-link motion-element">
+            <a href="/atom.xml">
+              <i class="menu-item-icon icon-feed"></i>
+              RSS
+            </a>
+          </div>
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+      </div>
+
+      
+        <div class="post-toc-wrap sidebar-panel-active">
+          <div class="post-toc-indicator-top post-toc-indicator"></div>
+          <div class="post-toc">
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#首先vertical-align属性"><span class="nav-number">1.</span> <span class="nav-text">首先，vertical-align属性</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#line-height"><span class="nav-number">2.</span> <span class="nav-text">Line height</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#css表格"><span class="nav-number">3.</span> <span class="nav-text">CSS表格</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#绝对定位"><span class="nav-number">4.</span> <span class="nav-text">绝对定位</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#幽灵元素"><span class="nav-number">5.</span> <span class="nav-text">幽灵元素</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#flexbox"><span class="nav-number">6.</span> <span class="nav-text">Flexbox</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#总结"><span class="nav-number">7.</span> <span class="nav-text">总结 。。。</span></a></li></ol></div>
+            
+          </div>
+          <div class="post-toc-indicator-bottom post-toc-indicator"></div>
+        </div>
+      
+
+    </div>
+  </div>
+
+
+    </div>
+
+    <div id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">
+  
+  &copy; &nbsp; 
+  2016
+  <span class="with-love">
+    <i class="icon-heart"></i>
+  </span>
+  <span class="author">lnxpgn</span>
+</div>
+
+<div class="powered-by">
+  Powered by <a class="theme-link" href="http://hexo.io">Hexo</a>
+</div>
+
+<div class="theme-info">
+  Theme -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Mist
+  </a>
+</div>
+
+
+
+      </div>
+    </div>
+
+    <div class="back-to-top"></div>
+  </div>
+
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  
+  
+
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js"></script>
+  <script type="text/javascript" src="/js/fancy-box.js?v=0.4.3"></script>
+
+
+  <script type="text/javascript" src="/js/helpers.js?v=0.4.3"></script>
+  
+
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js"></script>
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js"></script>
+
+  <script type="text/javascript" src="/js/motion_global.js?v=0.4.3" id="motion.global"></script>
+
+
+
+  <script type="text/javascript" src="/js/search-toggle.js"></script>
+
+  
+  
+<script type="text/javascript" src="/js/bootstrap.scrollspy.js?v=0.4.3" id="bootstrap.scrollspy.custom"></script>
+
+
+<script type="text/javascript" id="sidebar.toc.highlight">
+  $(document).ready(function () {
+    var tocSelector = '.post-toc';
+    var $tocSelector = $(tocSelector);
+    var activeCurrentSelector = '.active-current';
+
+    $tocSelector
+      .on('activate.bs.scrollspy', function () {
+        var $currentActiveElement = $(tocSelector + ' .active').last();
+
+        removeCurrentActiveClass();
+        $currentActiveElement.addClass('active-current');
+
+        $tocSelector[0].scrollTop = $currentActiveElement.position().top;
+      })
+      .on('clear.bs.scrollspy', function () {
+        removeCurrentActiveClass();
+      });
+
+    function removeCurrentActiveClass () {
+      $(tocSelector + ' ' + activeCurrentSelector)
+        .removeClass(activeCurrentSelector.substring(1));
+    }
+
+    function processTOC () {
+      getTOCMaxHeight();
+      toggleTOCOverflowIndicators();
+    }
+
+    function getTOCMaxHeight () {
+      var $sidebarInner = $('.sidebar-inner');
+      var height = $('.sidebar').height() -
+                   $tocSelector.position().top -
+                   $('.post-toc-indicator-bottom').height();
+
+      $tocSelector.css('height', height);
+
+      return height;
+    }
+
+    function toggleTOCOverflowIndicators () {
+      tocOverflowIndicator(
+        '.post-toc-indicator-top',
+        $tocSelector.scrollTop() > 0 ? 'show' : 'hide'
+      );
+
+      tocOverflowIndicator(
+        '.post-toc-indicator-bottom',
+        $tocSelector.scrollTop() >= $tocSelector.find('ol').height() - $tocSelector.height() ? 'hide' : 'show'
+      )
+    }
+
+    $(document).on('sidebar.didShow', function () {
+      processTOC();
+    });
+
+    $('body').scrollspy({ target: tocSelector });
+    $(window).on('resize', function () {
+      if ( $('.sidebar').hasClass('sidebar-active') ) {
+        processTOC();
+      }
+    });
+
+    onScroll($tocSelector);
+
+    function onScroll (element) {
+      element.on('mousewheel DOMMouseScroll', function (event) {
+          var oe = event.originalEvent;
+          var delta = oe.wheelDelta || -oe.detail;
+          var self = this;
+
+          this.scrollTop += ( delta < 0 ? 1 : -1 ) * 30;
+          event.preventDefault();
+
+          toggleTOCOverflowIndicators();
+      });
+    }
+
+    function tocOverflowIndicator (indicator, action) {
+      $(indicator).velocity('stop').velocity({
+        opacity: action === 'show' ? 0.4 : 0
+      }, { duration: 100 });
+    }
+
+  });
+</script>
+
+
+  <script type="text/javascript" id="sidebar.nav">
+    $(document).ready(function () {
+      var html = $('html');
+
+      $('.sidebar-nav li').on('click', function () {
+        var item = $(this);
+        var activeTabClassName = 'sidebar-nav-active';
+        var activePanelClassName = 'sidebar-panel-active';
+        if (item.hasClass(activeTabClassName)) {
+          return;
+        }
+
+        var currentTarget = $('.' + activePanelClassName);
+        var target = $('.' + item.data('target'));
+
+        currentTarget.velocity('transition.slideUpOut', 200, function () {
+          target
+            .velocity('stop')
+            .velocity('transition.slideDownIn', 200)
+            .addClass(activePanelClassName);
+        });
+
+        item.siblings().removeClass(activeTabClassName);
+        item.addClass(activeTabClassName);
+      });
+
+      $('.post-toc a').on('click', function (e) {
+        e.preventDefault();
+        var offset = $(escapeSelector(this.getAttribute('href'))).offset().top;
+        html.velocity('stop').velocity('scroll', {
+          offset: offset  + 'px',
+          mobileHA: false
+        });
+      });
+
+      // Expand sidebar on post detail page by default, when post has a toc.
+      var $tocContent = $('.post-toc-content');
+      if (isDesktop() && CONFIG.sidebar === 'post') {
+        if ($tocContent.length > 0 && $tocContent.html().trim().length > 0) {
+          displaySidebar();
+        }
+      }
+    });
+  </script>
+
+
+
+
+  <script type="text/javascript">
+    $(document).ready(function () {
+      if (CONFIG.sidebar === 'always') {
+        displaySidebar();
+      }
+    });
+  </script>
+
+  
+
+  
+  
+  
+
+  
+
+
+
+
+  
+  
+  <script type="text/javascript" src="/js/analytics_google-analytics.js?v=0.4.3"></script>
+
+
+</body>
+</html>
