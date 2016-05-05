@@ -5,7 +5,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://lnxpgn.github.io//"/>
-  <updated>2016-04-22T10:46:18.000Z</updated>
+  <updated>2016-05-05T14:02:00.000Z</updated>
   <id>http://lnxpgn.github.io//</id>
   
   <author>
@@ -20,9 +20,8 @@
     <link href="http://lnxpgn.github.io/2016/04/18/a-simple-web-developer-guide-to-color/"/>
     <id>http://lnxpgn.github.io/2016/04/18/a-simple-web-developer-guide-to-color/</id>
     <published>2016-04-18T08:55:15.000Z</published>
-    <updated>2016-04-22T10:46:18.000Z</updated>
-    <content type="html"><![CDATA[<p>&#x539F;&#x6587;&#xFF1A;<a href="https://www.smashingmagazine.com/2016/04/web-developer-guide-color/" target="_blank" rel="external">A Simple Web Developer&#x2019;s Guide To Color</a></p>
-<p>&#x6211;&#x4ECE;&#x6765;&#x4E0D;&#x662F;&#x4E00;&#x4E2A;&#x989C;&#x8272;&#x7406;&#x8BBA;&#x7684;&#x7231;&#x597D;&#x8005;&#x3002;&#x6211;&#x60F3;&#x662F;&#x56E0;&#x4E3A;&#x6211;&#x5BF9;&#x5B83;&#x4E00;&#x76F4;&#x4E0D;&#x62B1;&#x5E0C;&#x671B;&#x3002;&#x6211;&#x4E50;&#x610F;&#x5750;&#x5728;&#x90A3;&#x513F;&#xFF0C;&#x8272;&#x73AF;&#x5728;&#x624B;&#xFF0C;&#x9009;&#x53D6;&#x4E92;&#x8865;&#x8272;&#x3001;&#x5206;&#x6563;&#x7684;&#x4E92;&#x8865;&#x8272;&#x3001;&#x4E09;&#x8272;&#x914D;&#x8272;&#x65B9;&#x6848;&#xFF0C;&#x8BA9;&#x670B;&#x53CB;&#x3001;&#x5BB6;&#x4EBA;&#x3001;&#x5BA2;&#x6237;&#x5370;&#x8C61;&#x6DF1;&#x523B;&#x3002;</p>
+    <updated>2016-05-05T14:02:00.000Z</updated>
+    <content type="html"><![CDATA[<p>&#x6211;&#x4ECE;&#x6765;&#x4E0D;&#x662F;&#x4E00;&#x4E2A;&#x989C;&#x8272;&#x7406;&#x8BBA;&#x7684;&#x7231;&#x597D;&#x8005;&#x3002;&#x6211;&#x60F3;&#x662F;&#x56E0;&#x4E3A;&#x6211;&#x5BF9;&#x5B83;&#x4E00;&#x76F4;&#x4E0D;&#x62B1;&#x5E0C;&#x671B;&#x3002;&#x6211;&#x4E50;&#x610F;&#x5750;&#x5728;&#x90A3;&#x513F;&#xFF0C;&#x8272;&#x73AF;&#x5728;&#x624B;&#xFF0C;&#x9009;&#x53D6;&#x4E92;&#x8865;&#x8272;&#x3001;&#x5206;&#x6563;&#x7684;&#x4E92;&#x8865;&#x8272;&#x3001;&#x4E09;&#x8272;&#x914D;&#x8272;&#x65B9;&#x6848;&#xFF0C;&#x8BA9;&#x670B;&#x53CB;&#x3001;&#x5BB6;&#x4EBA;&#x3001;&#x5BA2;&#x6237;&#x5370;&#x8C61;&#x6DF1;&#x523B;&#x3002;</p>
 <p>&#x8BF4;&#x5B9E;&#x8BDD;&#xFF0C;&#x989C;&#x8272;&#x7406;&#x8BBA;&#x5BF9;&#x6211;&#x5F88;&#x9065;&#x8FDC;&#xFF0C;&#x5C1D;&#x8BD5;&#x5728;&#x9879;&#x76EE;&#x4E2D;&#x4F7F;&#x7528;&#x989C;&#x8272;&#x65F6;&#x6211;&#x4ECE;&#x672A;&#x53D1;&#x73B0;&#x5B83;&#x6709;&#x7528;&#x3002;&#x6709;&#x70B9;&#x8BBD;&#x523A;&#xFF0C;&#x6211;&#x53D1;&#x73B0;&#xFF0C;&#x989C;&#x8272;&#x7684;&#x9009;&#x62E9;&#x3001;&#x8FD0;&#x7528;&#x5F97;&#x8D8A;&#x597D;&#xFF0C;&#x80CC;&#x540E;&#x7684;&#x7406;&#x8BBA;&#x6211;&#x8D8A;&#x6709;&#x66F4;&#x597D;&#x7684;&#x8BA4;&#x8BC6;&#x3002;</p>
 <p>&#x5F53;&#x7136;&#xFF0C;&#x521A;&#x8D77;&#x6B65;&#x65F6;&#x7406;&#x8BBA;&#x5E76;&#x6CA1;&#x6709;&#x771F;&#x6B63;&#x5F97;&#x5E2E;&#x52A9;&#xFF0C;&#x5BF9;&#x5427;&#xFF1F;&#x8FD9;&#x5C31;&#x662F;&#x4E3A;&#x4EC0;&#x4E48;&#xFF0C;&#x5728;&#x8FD9;&#x7BC7;&#x6587;&#x7AE0;&#x91CC;&#xFF0C;&#x4F60;&#x4E0D;&#x4F1A;&#x770B;&#x5230;&#x4E00;&#x4E2A;&#x5355;&#x4E00;&#x7684;&#x8272;&#x73AF;&#xFF0C;&#x76F8;&#x53CD;&#xFF0C;&#x6211;&#x4F1A;&#x5C55;&#x793A;&#x4E00;&#x4E2A;&#x7B80;&#x5355;&#x7684;&#x4F60;&#x80FD;&#x7528;&#x5728;&#x4E0B;&#x4E00;&#x4E2A;Web&#x9879;&#x76EE;&#x7684;&#x989C;&#x8272;&#x5DE5;&#x4F5C;&#x6D41;&#x3002;</p>
 <a id="more"></a>
@@ -146,10 +145,10 @@
 <em>&#x4F7F;&#x7528;&#x4E0A;&#x8FF0;&#x6280;&#x672F;&#xFF0C;&#x5F53;&#x4F60;&#x9700;&#x8981;&#x65F6;&#xFF0C;&#x4F60;&#x80FD;&#x6269;&#x5C55;&#x4F60;&#x7684;&#x8C03;&#x8272;&#x677F;&#x6765;&#x638C;&#x63A7;&#x66F4;&#x591A;&#x7684;&#x989C;&#x8272;&#xFF08;<a href="https://media-mediatemple.netdna-ssl.com/wp-content/uploads/2016/03/14-color-palette-extended-opt.jpg" target="_blank" rel="external">&#x5927;&#x56FE;</a>&#xFF09;</em></p>
 <p>&#x8BBE;&#x8BA1;&#x65F6;&#xFF0C;&#x4F60;&#x6216;&#x8BB8;&#x5224;&#x5B9A;&#x5F15;&#x5165;&#x66F4;&#x591A;&#x989C;&#x8272;&#x8FDB;&#x8C03;&#x8272;&#x677F;&#x662F;&#x9002;&#x5F53;&#x7684;&#xFF0C;&#x8FD9;&#x7EDD;&#x5BF9;&#x53EF;&#x4EE5;&#xFF01;&#x53EA;&#x8981;&#x7EC6;&#x5FC3;&#xFF0C;&#x80FD;&#x7528;&#x4E0A;&#x8FF0;&#x6B65;&#x9AA4;&#x627E;&#x51FA;&#x66F4;&#x591A;&#x80FD;&#x4E0E;&#x4F60;&#x7684;&#x914D;&#x8272;&#x65B9;&#x6848;&#x4E00;&#x8D77;&#x5DE5;&#x4F5C;&#x7684;&#x989C;&#x8272;&#x3002;</p>
 <p>&#x7F8E;&#x5999;&#x7684;&#x5730;&#x65B9;&#x5728;&#x4E8E;&#x8FD9;&#x4E8B;&#x4F60;&#x505A;&#x7684;&#x8D8A;&#x591A;&#xFF0C;&#x9009;&#x62E9;&#x989C;&#x8272;&#x65F6;&#x4F60;&#x5E72;&#x7684;&#x8D8A;&#x597D;&#xFF0C;&#x4F60;&#x4F1A;&#x77E5;&#x9053;&#x54EA;&#x4E9B;&#x80FD;&#x4E00;&#x8D77;&#x5DE5;&#x4F5C;&#xFF0C;&#x54EA;&#x4E9B;&#x4E0D;&#x80FD;&#x3002;&#x6709;&#x65F6;&#x4E0A;&#x8FF0;&#x65B9;&#x6CD5;&#x4EA7;&#x51FA;&#x7684;&#x7ED3;&#x679C;&#x4E0D;&#x5C3D;&#x4E8E;&#x4EBA;&#x610F;&#xFF0C;&#x6240;&#x4EE5;&#x968F;&#x65F6;&#x8C03;&#x6574;&#x3002;&#x5B66;&#x4E60;&#x989C;&#x8272;&#x7406;&#x8BBA;&#xFF0C;&#x5374;&#x4E0D;&#x89C1;&#x7406;&#x8BBA;&#xFF0C;&#x73A9;&#x513F;&#x5F97;&#x5F00;&#x5FC3;&#xFF01;</p>
+<p>&#x539F;&#x6587;&#xFF1A;<a href="https://www.smashingmagazine.com/2016/04/web-developer-guide-color/" target="_blank" rel="external">A Simple Web Developer&#x2019;s Guide To Color</a></p>
 ]]></content>
     <summary type="html">
-    <![CDATA[<p>原文：<a href="https://www.smashingmagazine.com/2016/04/web-developer-guide-color/">A Simple Web Developer’s Guide To Color</a></p>
-<p>我从来不是一个颜色理论的爱好者。我想是因为我对它一直不抱希望。我乐意坐在那儿，色环在手，选取互补色、分散的互补色、三色配色方案，让朋友、家人、客户印象深刻。</p>
+    <![CDATA[<p>我从来不是一个颜色理论的爱好者。我想是因为我对它一直不抱希望。我乐意坐在那儿，色环在手，选取互补色、分散的互补色、三色配色方案，让朋友、家人、客户印象深刻。</p>
 <p>说实话，颜色理论对我很遥远，尝试在项目中使用颜色时我从未发现它有用。有点讽刺，我发现，颜色的选择、运用得越好，背后的理论我越有更好的认识。</p>
 <p>当然，刚起步时理论并没有真正得帮助，对吧？这就是为什么，在这篇文章里，你不会看到一个单一的色环，相反，我会展示一个简单的你能用在下一个Web项目的颜色工作流。</p>]]>
     
@@ -170,9 +169,8 @@
     <link href="http://lnxpgn.github.io/2016/03/06/how-to-vertically-align-elements-using-css/"/>
     <id>http://lnxpgn.github.io/2016/03/06/how-to-vertically-align-elements-using-css/</id>
     <published>2016-03-06T15:18:36.000Z</published>
-    <updated>2016-03-07T13:25:23.000Z</updated>
-    <content type="html"><![CDATA[<p>&#x539F;&#x6587;&#xFF1A;<a href="http://createdineden.com/blog/2014/september/24/a-professional-guide-how-to-vertically-align-elements-using-css/" target="_blank" rel="external">A Professional Guide: How to Vertically Align Elements Using CSS</a></p>
-<p>&#x4EFB;&#x4F55;&#x4E00;&#x4E2A;Web&#x5F00;&#x53D1;&#x4EBA;&#x5458;&#x90FD;&#x4F1A;&#x9047;&#x5230;&#x5782;&#x76F4;&#x5BF9;&#x9F50;&#x8FD9;&#x4E2A;&#x8001;&#x95EE;&#x9898;&#x3002;&#x6211;&#x5728;Web&#x9886;&#x57DF;&#x5DE5;&#x4F5C;&#x4E86;&#x5C06;&#x8FD1;&#x4E00;&#x5E74;&#xFF0C;&#x5DF2;&#x7ECF;&#x88AB;&#x5BA2;&#x6237;&#x95EE;&#x4E86;&#x591A;&#x6B21;&#x201C;&#x628A;&#x8FD9;&#x4E2A;&#x5BF9;&#x9F50;&#x5230;&#x7A97;&#x53E3;&#x4E2D;&#x592E;&#x201D;&#x6216;&#x201C;&#x628A;&#x90A3;&#x4E2A;&#x653E;&#x5230;&#x90A3;&#x4E2A;&#x7684;&#x4E2D;&#x90E8;&#x201D;&#x3002;&#x4F7F;&#x7528;CSS&#x5BB9;&#x6613;&#x5B9E;&#x73B0;&#x6C34;&#x5E73;&#x5BF9;&#x9F50;&#xFF1A;</p>
+    <updated>2016-05-05T14:01:50.000Z</updated>
+    <content type="html"><![CDATA[<p>&#x4EFB;&#x4F55;&#x4E00;&#x4E2A;Web&#x5F00;&#x53D1;&#x4EBA;&#x5458;&#x90FD;&#x4F1A;&#x9047;&#x5230;&#x5782;&#x76F4;&#x5BF9;&#x9F50;&#x8FD9;&#x4E2A;&#x8001;&#x95EE;&#x9898;&#x3002;&#x6211;&#x5728;Web&#x9886;&#x57DF;&#x5DE5;&#x4F5C;&#x4E86;&#x5C06;&#x8FD1;&#x4E00;&#x5E74;&#xFF0C;&#x5DF2;&#x7ECF;&#x88AB;&#x5BA2;&#x6237;&#x95EE;&#x4E86;&#x591A;&#x6B21;&#x201C;&#x628A;&#x8FD9;&#x4E2A;&#x5BF9;&#x9F50;&#x5230;&#x7A97;&#x53E3;&#x4E2D;&#x592E;&#x201D;&#x6216;&#x201C;&#x628A;&#x90A3;&#x4E2A;&#x653E;&#x5230;&#x90A3;&#x4E2A;&#x7684;&#x4E2D;&#x90E8;&#x201D;&#x3002;&#x4F7F;&#x7528;CSS&#x5BB9;&#x6613;&#x5B9E;&#x73B0;&#x6C34;&#x5E73;&#x5BF9;&#x9F50;&#xFF1A;</p>
 <p>&#x5BF9;&#x4E8E;&#x5757;&#x7EA7;&#x5143;&#x7D20;&#xFF08;block-level element&#xFF09;</p>
 <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="rule"><span class="attribute">display</span>:<span class="value"> block</span></span>; <span class="rule"><span class="attribute">margin</span>:<span class="value"> <span class="number">0</span> auto</span></span>;</span><br></pre></td></tr></table></figure>
 <p>&#x5BF9;&#x4E8E;&#x5185;&#x8054;&#x5143;&#x7D20;&#xFF08;inline element&#xFF0C;&#x4E5F;&#x53EB;&#x884C;&#x5185;&#x5143;&#x7D20;&#xFF09;</p>
@@ -253,10 +251,10 @@
 &#x5982;&#x679C;&#x4F60;&#x60F3;&#x4E86;&#x89E3;&#x5173;&#x4E8E;Flexbox&#x7684;&#x66F4;&#x591A;&#x4FE1;&#x606F;&#xFF0C;&#x770B;&#x4E0B;CSS Tricks&#x7684;<a href="http://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank" rel="external">&quot;A Complete Guide to Flexbox&quot;</a>&#x3002;</p>
 <h2 id="&#x603B;&#x7ED3;">&#x603B;&#x7ED3; &#x3002;&#x3002;&#x3002;</h2>
 <p>&#x6709;&#x8FD9;&#x4E48;&#x591A;&#x7684;&#x9009;&#x62E9;&#xFF0C;&#x771F;&#x662F;&#x5947;&#x602A;&#x4E3A;&#x4EC0;&#x4E48;&#x6211;&#x4EEC;&#x53D1;&#x73B0;&#x5782;&#x76F4;&#x5BF9;&#x9F50;&#x8FD8;&#x662F;&#x8FD9;&#x4E48;&#x96BE;&#xFF01;&#x4E0D;&#x5E78;&#x7684;&#x662F;&#x6CA1;&#x6709;&#x4E00;&#x4E2A;&#x6700;&#x4F73;&#x89E3;&#x51B3;&#x65B9;&#x6848;&#x3002;Flexbox&#x770B;&#x4E0A;&#x53BB;&#x66F4;&#x6709;&#x524D;&#x666F;&#xFF0C;&#x552F;&#x4E00;&#x7684;&#x7F3A;&#x70B9;&#x662F;&#x5B83;&#x4E0E;&#x65E7;&#x7248;&#x6D4F;&#x89C8;&#x5668;&#x7684;&#x517C;&#x5BB9;&#x6027;&#xFF0C;&#x7136;&#x800C;&#x6211;&#x60F3;&#x4E00;&#x65E6;&#x89C4;&#x8303;&#x6572;&#x5B9A;&#x5B83;&#x4F1A;&#x662F;&#x6211;&#x4EEC;&#x8981;&#x8F6C;&#x5411;&#x7684;&#x6280;&#x672F;&#x3002;</p>
+<p>&#x539F;&#x6587;&#xFF1A;<a href="http://createdineden.com/blog/2014/september/24/a-professional-guide-how-to-vertically-align-elements-using-css/" target="_blank" rel="external">A Professional Guide: How to Vertically Align Elements Using CSS</a></p>
 ]]></content>
     <summary type="html">
-    <![CDATA[<p>原文：<a href="http://createdineden.com/blog/2014/september/24/a-professional-guide-how-to-vertically-align-elements-using-css/">A Professional Guide: How to Vertically Align Elements Using CSS</a></p>
-<p>任何一个Web开发人员都会遇到垂直对齐这个老问题。我在Web领域工作了将近一年，已经被客户问了多次“把这个对齐到窗口中央”或“把那个放到那个的中部”。使用CSS容易实现水平对齐：</p>
+    <![CDATA[<p>任何一个Web开发人员都会遇到垂直对齐这个老问题。我在Web领域工作了将近一年，已经被客户问了多次“把这个对齐到窗口中央”或“把那个放到那个的中部”。使用CSS容易实现水平对齐：</p>
 <p>对于块级元素（block-level element）</p>
 <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="rule"><span class="attribute">display</span>:<span class="value"> block</span></span>; <span class="rule"><span class="attribute">margin</span>:<span class="value"> <span class="number">0</span> auto</span></span>;</span><br></pre></td></tr></table></figure>
 <p>对于内联元素（inline element，也叫行内元素）</p>
